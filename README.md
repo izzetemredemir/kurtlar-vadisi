@@ -1,5 +1,5 @@
 # kurtlar-vadisi
-Operation Kurtlar Vadisi  is a simple cyber security tool  which provide a web page for control different tools.
+Operation Kurtlar Vadisi  is a simple cyber security tool  which provides a web page for control different tools.
 
 ## Screenshot
 ![screenshot](https://i.ibb.co/LPsTT8g/kurtlarvadisi.png)
