@@ -14,37 +14,42 @@
           <div>
             <h6 class="my-0">Nmap Version</h6>
           </div>
-          <span class="text-muted">{{ versiyon[0] }}.{{ versiyon[1] }}</span>
         </li>
       </ul>
     </div>
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Nmap Tarama</h4>
+      <h4 class="mb-3">Domain Tarama</h4>
       {% from "includes/formhelpers.html" import render_field %}
       <form class="needs-validation" method="POST">
         <div class="row">
           <div class="col-md-8 mb-3">
-
              {{ render_field(form.host,class = "form-control",value="127.0.0.1") }}
             <div class="invalid-feedback">
               Valid first name is required.
             </div>
           </div>
           <div class="col-md-4 mb-3">
-                      {{ render_field(form.port,class = "form-control",value="21-443") }}
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
+       <div class="form-group">
+    <label>Modül Seçin</label>
+    <select class="form-control" name="select">
+        {% if select %}
+        <option value="{{select}}" >{{select}}</option>
+        {% endif %}
+      <option value="Whois" >Whois lookup</option>
+      <option value="Traceroute" >Traceroute</option>
+      <option value="DnsLookup" >DNS Lookup</option>
+      <option value="ReverseDnsLookup" >Reverse DNS Lookup</option>
+      <option value="GeoIPLookup" >GeoIP Lookup</option>
+      <option value="PortScan" >Port Scan</option>
+      <option value="ReverseIpLookup" >Reverse IP Lookup</option>
+    </select>
+  </div>
           </div>
         </div>
         <button class="btn btn-primary btn-lg btn-block" type="submit">Başlat</button>
       </form>
       <br>
-      <ul class="list-group">
-      {% for i in report %}
-          <li class="list-group-item">{{i}}</li>
-      {% endfor %}
-    </ul>
+  <p>{{report|safe}}</p>
     </div>
   </div>
  {% endblock %}

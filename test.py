@@ -1,4 +1,7 @@
 import nmap
+import os
+import sys
+import domain
 
 def nmapScan(host,port):
     nm = nmap.PortScanner()
@@ -17,5 +20,27 @@ def nmapScan(host,port):
 
     return liste
 
-print(nmapScan('192.168.1.1','80'))
+def Whois(url):
+    return os.system("curl http://api.hackertarget.com/whois/?q=" + url)
 
+def Traceroute(url):
+    return os.system("curl https://api.hackertarget.com/mtr/?q=" + url)
+
+def DnsLookup(url):
+   return os.system("curl http://api.hackertarget.com/dnslookup/?q=" + url)
+
+def ReverseDnsLookup(url):
+    return os.system("curl https://api.hackertarget.com/reversedns/?q=" + url )
+
+def GeoIPLookup(url):
+    return os.system("curl http://api.hackertarget.com/geoip/?q=" + url )
+
+def PortScan(url):
+    return  os.system("curl http://api.hackertarget.com/nmap/?q=" + url )
+
+def ReverseIpLookup(url):
+    return os.system("curl http://api.hackertarget.com/reverseiplookup/?q=" + url)
+
+
+
+print(type(domain))

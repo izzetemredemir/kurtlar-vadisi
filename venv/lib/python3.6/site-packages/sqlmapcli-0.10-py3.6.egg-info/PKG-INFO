@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: sqlmapcli
+Version: 0.10
+Summary: Simplify your operations for sqlmapapi
+Home-page: https://www.github.com/jetz/sqlmapcli
+Author: jetz
+Author-email: jet.zheung@gmail.com
+License: MIT
+Description: Simplify Your Operations For Sqlmapapi
+        
+        TODO
+        -----
+        - [ ] docs
+        - [ ] download
+        - [ ] examples
+        
+        
+        2016-08-18
+        -----------
+        Release v0.10.
+        
+Keywords: sqlmap,sqlmapapi,sqlmapcli,sqlmap-proxy,sqlmap-client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
