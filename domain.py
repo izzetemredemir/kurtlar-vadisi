@@ -25,6 +25,4 @@ def ReverseIpLookup(url):
     return requests.get("http://api.hackertarget.com/reverseiplookup/?q=" + url).text
 
 
-test= Whois(r"haber18.com")
-a = test.replace("\n", "<br> ")
-print(a)
+
