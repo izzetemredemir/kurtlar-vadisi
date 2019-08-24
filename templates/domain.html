@@ -12,13 +12,13 @@
       <ul class="list-group mb-3">
         <li class="list-group-item d-flex justify-content-between lh-condensed">
           <div>
-            <h6 class="my-0">Nmap Version</h6>
+            <h6 class="my-0">Version</h6>
           </div>
         </li>
       </ul>
     </div>
     <div class="col-md-8 order-md-1">
-      <h4 class="mb-3">Domain Tarama</h4>
+      <h4 class="mb-3">Hacker Target API</h4>
       {% from "includes/formhelpers.html" import render_field %}
       <form class="needs-validation" method="POST">
         <div class="row">
@@ -42,6 +42,11 @@
       <option value="GeoIPLookup" >GeoIP Lookup</option>
       <option value="PortScan" >Port Scan</option>
       <option value="ReverseIpLookup" >Reverse IP Lookup</option>
+      <option value="PageLinks" >Extract Page Links</option>
+      <option value="HttpHeaders" >HTTP Header Check</option>
+      <option value="SubnetCall" >Subnet Lookup</option>
+      <option value="ZoneTransfer" >Zone Transfer</option>
+      <option value="DnsHost" >Find Shared DNS</option>
     </select>
   </div>
           </div>

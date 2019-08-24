@@ -65,6 +65,18 @@ def DomainModule():
             ScanReport = domain.PortScan(host)
         elif select == "ReverseIpLookup":
             ScanReport = domain.ReverseIpLookup(host)
+        elif select == "PageLinks":
+            ScanReport = domain.PageLinks(host)
+        elif select == "HttpHeaders":
+            ScanReport = domain.HttpHeaders(host)
+        elif select == "SubnetCall":
+            ScanReport = domain.SubnetCall(host)
+        elif select == "ZoneTransfer":
+            ScanReport = domain.ZoneTransfer(host)
+        elif select == "SharedDns":
+            ScanReport = domain.SharedDns(host)
+        elif select == "DnsHost":
+            ScanReport = domain.DnsHost(host)
         else:
             pass
         ScanReport = ScanReport.replace("\n", "<br> ")

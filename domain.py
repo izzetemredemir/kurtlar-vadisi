@@ -24,5 +24,24 @@ def PortScan(url):
 def ReverseIpLookup(url):
     return requests.get("http://api.hackertarget.com/reverseiplookup/?q=" + url).text
 
+def PageLinks(url):
+    return requests.get("https://api.hackertarget.com/pagelinks/?q=" + url).text
+
+def HttpHeaders(url):
+    return requests.get("https://api.hackertarget.com/httpheaders/?q=" + url).text
+
+def SubnetCall(url):
+    return requests.get("https://api.hackertarget.com/subnetcalc/?q=" + url).text
+
+def ZoneTransfer(url):
+    return requests.get("https://api.hackertarget.com/zonetransfer/?q=" + url).text
+
+def SharedDns(url):
+    return requests.get("https://api.hackertarget.com/findshareddns/?q=" + url).text
+
+def DnsHost(url):
+    return requests.get("https://api.hackertarget.com/hostsearch/?q=" + url).text
+
+
 
 
