@@ -3,6 +3,7 @@ Operation Kurtlar Vadisi  is a simple cyber security tool  which provides a web 
 
 ## Screenshot
 ![screenshot](https://i.ibb.co/LPsTT8g/kurtlarvadisi.png)
+![screenshot2](https://pbs.twimg.com/media/ECxhcbAW4AALRQM?format=jpg&name=large)
 
 ## Kurtlar Vadisi 
 "Kurtlar Vadisi operasyonu bitmiştir. Yanlışıyla, doğrusuyla bu mücadele benim şahsımda Türk milletine aittir. Takdir, yüce milletimindir."
